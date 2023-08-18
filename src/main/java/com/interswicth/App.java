@@ -8,6 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        SimpleCalculator calc =
+                new SimpleCalculator(45, 34);
+        System.out.printf("%s + %s = %s\n",
+                calc.getFirstNumber(),
+                calc.getSecondNumber(), calc.addTowNumbers());
     }
 }
